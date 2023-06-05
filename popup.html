@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chatbot Extension</title>
+  <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Convenient</h1>
+    <div id="authContainer">
+      <input type="password" id="passwordInput" placeholder="Enter the password">
+      <button id="authenticateButton">Authenticate</button>
+    </div>
+    <div id="apiKeyContainer" style="display: none;">
+      <input type="text" id="apiKeyInput" placeholder="Enter the API key">
+      <button id="saveApiKeyButton">Save API Key</button>
+    </div>
+    <div id="chatbotContainer" style="display: none;">
+      <input type="text" id="questionInput" placeholder="Enter a question">
+      <input type="text" id="choicesInput" placeholder="Enter choices (comma-separated)">
+      <button id="submitButton">Submit</button>
+      <div id="responseContainer"></div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
